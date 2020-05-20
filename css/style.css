@@ -78,38 +78,16 @@ li:hover::after {
   color: #fff;
   padding: 10px 20px;
   letter-spacing: 5px;
-  animation: ease-out 0.5s h1-animation;
 }
 
 .description p {
   color: #999;
   text-align: justify;
   padding: 10px;
-  animation: ease-out 0.5s p-animation;
 }
 
 .description {
   overflow: hidden;
-}
-
-@keyframes h1-animation {
-  from {
-    transform: translate3d(-80%, 0, 0);
-    opacity: 0;
-  }
-  to {
-    transform: translate3d(0, 0, 0);
-    opacity: 1;
-  }
-}
-
-@keyframes p-animation {
-  0% {
-    transform: translate3d(-80%, 0, 0);
-  }
-  100% {
-    transform: translate3d(0, 0, 0);
-  }
 }
 
 /* container-about */
@@ -179,7 +157,7 @@ li:hover::after {
   transform: translateY(0);
 }
 .box .card:hover .face.face1 {
-  transform: translateY(0);
+  transform: translateX(0);
   opacity: 1;
   background-image: linear-gradient(
     to right,
@@ -190,6 +168,7 @@ li:hover::after {
     #ee609c 66%
   );
 }
+
 /* container-cards-projects */
 
 /* footer */
@@ -200,7 +179,7 @@ footer {
   background: #fff;
 }
 .container-footer {
-  width: 70%;
+  width: 100%;
   margin: 0 auto;
 }
 .contacts {
@@ -213,7 +192,7 @@ footer {
 .contacts i,
 .contacts span {
   color: #000;
-  font-size: 22px;
+  font-size: 18px;
 }
 .contacts i {
   padding: 5px;
