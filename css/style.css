@@ -54,6 +54,7 @@ li:hover::after {
   margin-bottom: 15px;
   position: relative;
   overflow: hidden;
+  font-size: 1rem;
 }
 
 .title::before {
@@ -83,6 +84,7 @@ li:hover::after {
 
 .description p {
   color: #999;
+  font-size: 1rem;
   text-align: justify;
   padding: 10px;
 }
@@ -206,7 +208,7 @@ footer {
     font-size: 0.7rem;
   }
   .title h1 {
-    font-size: 1rem;
+    font-size: 2rem;
     width: 100%;
   }
   .box {
@@ -218,6 +220,17 @@ footer {
   }
 
   .description p {
-    font-size: 0.5rem;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .title h1 {
+    font-size: 1.3rem;
+    width: 100%;
+  }
+
+  .description p {
+    font-size: 0.8rem;
   }
 }
