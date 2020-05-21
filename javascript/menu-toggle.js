@@ -1,8 +1,11 @@
 const menutoggle = document.querySelector(".menu-mobile");
 const navMobile = document.querySelector(".mobile");
-console.log(navMobile);
+
+let show = true;
 
 menutoggle.addEventListener("click", () => {
-  menutoggle.classList.toggle("x-menu");
-  navMobile.classList.toggle("mobile-show");
+  document.body.style.overflow = show ? "hidden" : "initial";
+  menutoggle.classList.toggle("x-menu", show);
+  navMobile.classList.toggle("mobile-show", show);
+  show = !show;
 });
