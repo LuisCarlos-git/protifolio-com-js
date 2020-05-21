@@ -56,6 +56,16 @@
     transform: translateY(0);
     opacity: 1;
   }
+  .x-menu .one {
+    transform: rotate(45deg) translate(8px, 4px);
+  }
+  .x-menu .two {
+    opacity: 0;
+  }
+
+  .x-menu .three {
+    transform: rotate(-45deg) translate(9px, -5px);
+  }
 }
 
 @media (min-width: 600px) {
