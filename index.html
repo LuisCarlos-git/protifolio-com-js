@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/global.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/utils.css" />
+    <link rel="stylesheet" href="css/menu-mobile.css" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
@@ -22,7 +23,13 @@
   <body>
     <div class="container">
       <header class="center">
-        <nav>
+        <nav class="navigation">
+          <div class="menu-mobile">
+            <div class="one"></div>
+            <div class="two"></div>
+            <div class="three"></div>
+          </div>
+
           <ul class="center-ul">
             <li class="center"><a href="#sobre">Sobre</a></li>
             <li class="center"><a href="#techs">Tecnologias</a></li>
@@ -33,7 +40,15 @@
         </nav>
       </header>
       <!--Header-->
-
+      <nav class="mobile">
+        <ul>
+          <li class="center"><a href="#sobre">Sobre</a></li>
+          <li class="center"><a href="#techs">Tecnologias</a></li>
+          <li class="center"><a href="#projects">Projetos</a></li>
+          <li class="center"><a href="#observer">Observações</a></li>
+          <li class="center"><a href="#contacts">Contatos</a></li>
+        </ul>
+      </nav>
       <div id="sobre" class="container-screen">
         <div class="title">
           <h1>Um pouco sobre mim!</h1>
@@ -237,5 +252,6 @@
     <!--Container-->
 
     <script src="javascript/scroll.js"></script>
+    <script src="javascript/menu-toggle.js"></script>
   </body>
 </html>
