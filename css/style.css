@@ -204,13 +204,23 @@ footer {
 .contacts i {
   padding: 5px;
 }
+@media (max-width: 900px) {
+  .title h1 {
+    font-size: 2rem;
+    width: 100%;
+  }
+
+  .description p {
+    font-size: 0.8rem;
+  }
+}
 
 @media (max-width: 850px) {
   header nav ul li a {
     font-size: 0.7rem;
   }
   .title h1 {
-    font-size: 2rem;
+    font-size: 1.3rem;
     width: 100%;
   }
   .box {
@@ -220,19 +230,14 @@ footer {
     align-items: center;
     flex-direction: column;
   }
-
-  .description p {
-    font-size: 0.8rem;
-  }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 400px) {
   .title h1 {
-    font-size: 1.3rem;
+    font-size: 1rem;
     width: 100%;
   }
-
   .description p {
-    font-size: 0.8rem;
+    font-size: 0.5rem;
   }
 }
