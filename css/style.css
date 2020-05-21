@@ -1,6 +1,5 @@
 .container {
   padding-top: 100px;
-  border: px solid red;
 }
 
 header {
@@ -15,13 +14,14 @@ header {
 }
 header nav {
   width: 100%;
+  max-width: 900px;
 }
 
 header nav ul li {
-  width: 10%;
+  width: 20%;
   position: relative;
   margin-right: 20px;
-  padding: 5px;
+  padding: 10px;
 }
 
 header nav ul li a {
@@ -181,6 +181,8 @@ footer {
 .container-footer {
   width: 100%;
   margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
 }
 .contacts {
   padding: 0 30px;
@@ -196,4 +198,22 @@ footer {
 }
 .contacts i {
   padding: 5px;
+}
+
+@media (max-width: 850px) {
+  .title h1 {
+    font-size: 1rem;
+    width: 100%;
+  }
+  .box {
+    width: 100%;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .description p {
+    font-size: 0.5rem;
+  }
 }
