@@ -1,0 +1,94 @@
+.hello {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  min-height: 80vh;
+  padding: 30px;
+}
+
+.welcome {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100px;
+}
+
+.welcome h1 {
+  font-size: 2rem;
+  padding: 10px 10px;
+  color: #fff;
+  text-align: center;
+}
+
+.welcome h1::after {
+  content: "|";
+  animation: blink infinite 0.2s;
+}
+
+.photo {
+  width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.photo img {
+  width: 400px;
+  border-radius: 5%;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+@media (max-width: 1060px) {
+  .hello {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    min-height: 60vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+  }
+  .welcome {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .photo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+  }
+}
+@media (max-width: 600px) {
+  .welcome h1 {
+    font-size: 1.4rem;
+  }
+
+  .photo img {
+    width: 350px;
+  }
+}
+
+@media (max-width: 450px) {
+  .welcome h1 {
+    font-size: 1rem;
+  }
+
+  .photo img {
+    width: 300px;
+  }
+}

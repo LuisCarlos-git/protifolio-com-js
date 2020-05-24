@@ -1,4 +1,4 @@
-@media (max-width: 600px) {
+@media (max-width: 1018px) {
   header nav ul.center-ul {
     display: none;
   }
@@ -67,8 +67,14 @@
   }
 }
 
-@media (min-width: 600px) {
+@media (min-width: 1018px) {
   .mobile {
     display: none;
+  }
+}
+@media (max-width: 560px) {
+  .menu-mobile {
+    margin-right: 10px;
+    width: 35px;
   }
 }

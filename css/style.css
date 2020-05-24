@@ -6,15 +6,18 @@ header {
   width: 100%;
   height: 75px;
   margin-bottom: 20px;
+  padding: 0 30px;
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 20;
+  z-index: 10;
   background: #191920;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 header nav {
-  width: 100%;
-  max-width: 1200px;
+  max-width: 900px;
 }
 
 header nav ul li {
@@ -41,6 +44,7 @@ header nav ul li a {
   width: 100%;
   height: 5px;
   border-radius: 10px;
+  animation: after ease-out 0.2s;
   background-image: linear-gradient(
     to right,
     #b8cbb8 0%,
@@ -51,6 +55,15 @@ header nav ul li a {
     #ee609c 100%
   );
 }
+header .logo {
+  width: 100%;
+  min-width: 200px;
+}
+
+header .logo img {
+  height: 25px;
+}
+
 /* header */
 
 .title {
@@ -220,9 +233,6 @@ footer {
 }
 
 @media (max-width: 850px) {
-  header nav ul li a {
-    font-size: 0.7rem;
-  }
   .title h1 {
     font-size: 1.3rem;
     width: 100%;
@@ -237,11 +247,34 @@ footer {
 }
 
 @media (max-width: 400px) {
+  header {
+    padding: 0 10px;
+  }
+
   .title h1 {
     font-size: 1rem;
     width: 100%;
   }
   .description p {
     font-size: 0.7rem;
+  }
+
+  .contacts i,
+  .contacts span {
+    color: #000;
+    font-size: 0.8rem;
+  }
+
+  header .logo img {
+    height: 20px;
+  }
+}
+
+@keyframes after {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
   }
 }
