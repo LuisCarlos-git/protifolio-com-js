@@ -15,9 +15,8 @@
   align-items: center;
 }
 
-@media (max-width: 850px) {
+@media (max-width: 1018px) {
   .container-screen {
     width: 90%;
-    margin: 70px auto;
   }
 }
