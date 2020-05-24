@@ -14,4 +14,6 @@ navMobile.addEventListener("click", () => {
   document.body.style.overflow = "initial";
   menutoggle.classList.toggle("x-menu", false);
   navMobile.classList.toggle("mobile-show", false);
+
+  show = !show;
 });
