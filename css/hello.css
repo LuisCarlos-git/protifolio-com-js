@@ -37,6 +37,11 @@
   border-radius: 5%;
 }
 
+lottie-player {
+  width: 500px;
+  height: 400px;
+}
+
 @keyframes blink {
   0%,
   100% {
@@ -80,6 +85,11 @@
 
   .photo img {
     width: 350px;
+  }
+
+  lottie-player {
+    width: 350px;
+    height: 300px;
   }
 }
 
