@@ -65,9 +65,8 @@ lottie-player {
   }
   .welcome {
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: block;
+    min-height: 135px;
   }
 
   .photo {
