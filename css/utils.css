@@ -6,7 +6,7 @@
 
 .container-screen {
   width: 70%;
-  margin: 0 auto 40px;
+  margin: 70px auto;
 }
 
 .center-ul {
@@ -18,5 +18,6 @@
 @media (max-width: 1018px) {
   .container-screen {
     width: 90%;
+    margin: 0 auto 40px;
   }
 }

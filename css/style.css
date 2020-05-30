@@ -61,7 +61,7 @@ header .logo {
 }
 
 header .logo img {
-  height: 25px;
+  height: 30px;
 }
 
 /* header */
@@ -221,6 +221,13 @@ footer {
 .contacts i {
   padding: 5px;
 }
+
+@media (max-width: 1018px) {
+  header .logo img {
+    height: 27px;
+  }
+}
+
 @media (max-width: 900px) {
   .title h1 {
     font-size: 2rem;
@@ -266,7 +273,7 @@ footer {
   }
 
   header .logo img {
-    height: 20px;
+    height: 27px;
   }
 }
 
