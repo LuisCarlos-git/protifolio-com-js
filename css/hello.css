@@ -57,7 +57,7 @@ lottie-player {
     display: flex;
     width: 90%;
     margin: 0 auto;
-    min-height: 60vh;
+    min-height: 50vh;
     flex-direction: column;
     justify-content: center;
     align-items: center;
